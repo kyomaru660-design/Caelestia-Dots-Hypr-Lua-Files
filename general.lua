@@ -1,0 +1,25 @@
+-- General
+-- See https://wiki.hypr.land/Configuring/Basics/Variables/
+
+hl.config({
+    general = {
+        layout       = "dwindle",
+        allow_tearing = false,
+
+        gaps_workspaces = workspaceGaps,
+        gaps_in         = windowGapsIn,
+        gaps_out        = windowGapsOut,
+        border_size     = windowBorderSize,
+
+        col = {
+            active_border   = activeWindowBorderColour,
+            inactive_border = inactiveWindowBorderColour,
+        },
+    },
+
+    dwindle = {
+        preserve_split  = true,
+        smart_split     = false,
+        smart_resizing  = true,
+    },
+})
